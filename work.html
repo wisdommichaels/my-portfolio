@@ -4,14 +4,58 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
     <style>
-        body{
-           
-            background-color:  rgb(18, 23, 47);
-            padding: 0;
-            margin: 0;
-            color: white;
-        }
+       body {
+    font-family: "Poppins", sans-serif;
+    margin: 50px 50px 0 50px;
+    display: flex;
+    flex-direction: column;
+    background-color:  rgb(18, 23, 47);
+    color: white;
+  }
+  
+  .main {
+    flex: 1;
+  }
+  
+  h1 {
+    font-size: 5rem;
+  }
+  .logo{
+    width: 200px;
+  }
+  
+  .tile-image {
+    height: 200px;
+    float: left;
+    margin-right: 50px;
+  }
+  
+  .title-image{
+  height: 200px;
+  float: left;
+  margin-right: 50px;
+  margin-top: 25px;
+  }
+  
+  
+  .card {
+    width: 50%
+  }
+  
+  .card-title{
+    margin: 30px;
+  }
+  
+  .right {
+    float: left;
+  }
+  
+  
+  span{color: rgb(96, 96, 238);}
         header{
     background-color: #547dc4;
     color: #000000;
@@ -20,8 +64,8 @@
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-.nav{
-    align-content: flex-end;
+nav{
+    display: inline-block;
 }
 
 nav ul {
@@ -44,12 +88,16 @@ nav ul li a {
 nav ul li a:hover {
     text-decoration: none;
 }
+#top :hover {
+  color: rgb(230, 42, 9);
+}
 
     </style>
 </head>
 <body>
     <header id="top"><a href="#Top"></a>
         <nav>
+            <img class="logo" src="./Assets/MY LOG.png" alt="logo">
             <ul>
                 <li><a href="./home.html">Home</a></li>
                 <li><a href="./about.html">About</a></li>
@@ -59,7 +107,31 @@ nav ul li a:hover {
             </ul>
         </nav>
     </header>
-    
+    <main>
+        <div class="main">
+            <h1>We are a <span>Creative</span><br>Design Agency</h1>
+            <div class="left card">
+              <img class="tile-image" src="./Assets/beautiful.jpg" alt="hand and flower in water">
+              <h2 class="card-title">Creativity</h2>
+              <p class="card-text">We strive to create the most beautiful websites for all your needs. Working closely with you
+                to
+                design and
+                develop an amazing website for your business.</p>
+            </div>
+        
+            <div class="right card">
+                <img class="tile-image" src="./Assets/construction.jpg" alt="metal structure">
+              <h2 class="card-title">Construction</h2>
+              <p>Built by our team of professional developers, we ensure the most rigourous and modern websites. Built from
+                scratch using HTML, CSS j.script, React and more. Only the best for you.</p>
+            </div>
+            <div class="right card">
+                <img class="title-image" src="./Assets/graphics.png" alt="paint designs">
+              <h2 class="card-title">Designing</h2>
+              <p>We expertice in giving you the best designs of art and practice of planning and projecting ideas of experiences with visual and textual content of the best creativity ever.</p>
+            </div>
+    </main>
+      
     <section id="work">
         <h2>Work</h2>
         <ol>

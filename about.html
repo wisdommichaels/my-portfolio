@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About</title>
+    <title>About Me</title>
     <style>
       body{
             background-color:  rgb(18, 23, 47);
@@ -39,12 +39,27 @@ nav ul li a {
     text-decoration: none;
 }
 
+#top :hover {
+  color: rgb(230, 42, 9);
+}
+
 nav ul li a:hover {
     text-decoration: none;
 }
-img{
+section{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    padding: 100px;
+}
+div img{
+    border-radius: 50%; object-fit: cover;
+    width: 300px;
+    height: 300px;
     border: solid  rgb(105, 238, 238);
-    border-radius:
+}
+h1{
+display: block
 }
     </style>
 </head>
@@ -62,8 +77,8 @@ img{
     </header>
     
     <section>
-        <h2>About Me</h2>
-        <img src="./Assets/image.jpg" alt="my image" height="200px"></div>
+        <h1>About Me</h1>
+        <div><img src="./Assets/image.jpg" alt="my image" height="200px"></div></div>
         <p>Hi, my name is <b>WISDOM MICHAEL</b> and i am a <b>WEB DEVELOPER.</b> I am dedicated and determined in my goals with a passion for creating efficient and user-friendly web app and applications.</p>
         <hr>
     </section>
