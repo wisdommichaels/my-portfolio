@@ -32,7 +32,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #fff;
+    color: rgb(105, 238, 238);
     text-decoration: none;
 }
 
@@ -57,6 +57,7 @@ h1{
     font-size: 50px;
     text-align: center;
     padding-top: 80px;
+    padding-right: 20px;
     display: inline-block;
 }
 span{
