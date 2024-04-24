@@ -8,36 +8,80 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
     <style>
+    *{
+      margin: 0;
+      padding: 0;
+    }
        body {
     font-family: "Poppins", sans-serif;
-    margin: 50px 50px 0 50px;
     display: flex;
+    gap: 10px;
     flex-direction: column;
     background-color:  rgb(18, 23, 47);
     color: white;
   }
+  header{
+    display: flex;
+    justify-content: space-between;
+    background-color: #547dc4;
+    padding:20px 20vh;
+    align-items: center;
+}
   
-  .main {
+.logo{
+    width: 200px;
+  }
+  
+  nav{
+    display: flex;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+#log{
+    border-radius: 5px;
+    background-color: rgb(45, 45, 194);
+    padding: 10px;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color:
+   white;
+    text-decoration: none;
+}
+
+ul :hover {
+  color: rgb(105, 238, 238);
+}
+
+.main {
     flex: 1;
+    padding: 50px;
   }
   
   h1 {
     font-size: 5rem;
-  }
-  .logo{
-    width: 200px;
+    padding: 8vh;
   }
   
   .tile-image {
     height: 200px;
     float: left;
-    margin-right: 50px;
+    margin-right: 20px;
   }
   
   .title-image{
   height: 200px;
   float: left;
-  margin-right: 50px;
+  margin-right: 20px;
   margin-top: 25px;
   }
   
@@ -50,106 +94,118 @@
     margin: 30px;
   }
   
-  .right {
+  .left {
     float: left;
   }
   
+  .right {
+    float: right;
+  }
+
+  .leftdown{
+    float: left;
+    padding-top: 70px;
+  }
+
+  .rightdown{
+ display: flex;
+ flex-direction: row;
+    padding-top: 70px;
+  }
   
-  span{color: rgb(96, 96, 238);}
-        header{
-    background-color: #547dc4;
-    color: #000000;
-    padding: 10px 0;
+  
+  span{color: midnightblue;}
+
+  footer {
     text-align: center;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
-
-nav{
-    display: inline-block;
-}
-
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-nav ul li {
+    color: midnightblue;
+  }
+  
+  @media (max-width: 680px){
+    .logo {
+      width: 100px;
+    }
+    
+    h1 {
+      font-size: 3.5rem;
+      text-align: center;
+    }
+  
+  .card {
+    width: 100%;
+    display: block;
+    margin-bottom: 30px;
+    text-align: justify;
+  }
+  
+  .card img {
+    margin-bottom: 10px;
+    width: 100%;
     display: inline;
-    margin-right: 20px;
-}
+    object-fit: cover;
+  }
+  }
+  span{color: rgb(96, 96, 238);}
 
-nav ul li a {
-    color:
-    rgb(105, 238, 238);
-    text-decoration: none;
+  footer {
+    background-color: #547dc4;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 25px;
 }
-
-nav ul li a:hover {
-    text-decoration: none;
+.footer{
+    margin: 0;
 }
-#top :hover {
-  color: rgb(230, 42, 9);
-}
-
+ 
     </style>
 </head>
 <body>
-    <header id="top"><a href="#Top"></a>
+    <header>
+      <img class="logo" src="./Assets/MY LOG.png" alt="logo"> 
         <nav>
-            <img class="logo" src="./Assets/MY LOG.png" alt="logo">
             <ul>
                 <li><a href="./home.html">Home</a></li>
-                <li><a href="./about.html">About</a></li>
+                <li><a href="./about.html">About Me</a></li>
                 <li><a href="./resume.html">Resume</a></li>
                 <li><a href="./work.html">Work</a></li>
-                <li><a href="./contact.html">Contact</a></li>
+                <li id="log"><a href="./contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
-    <main>
-        <div class="main">
-            <h1>We are a <span>Creative</span><br>Design Agency</h1>
-            <div class="left card">
-              <img class="tile-image" src="./Assets/beautiful.jpg" alt="hand and flower in water">
-              <h2 class="card-title">Creativity</h2>
-              <p class="card-text">We strive to create the most beautiful websites for all your needs. Working closely with you
-                to
-                design and
-                develop an amazing website for your business.</p>
-            </div>
+    <div><h1>We are a <span>Creative</span><br>Design Agency</h1></div>
+    <hr>
+    <div class="main">
+      <div class="left card">
+        <img class="tile-image" src="./Assets/beautiful.jpg" alt="hand and flower in water">
+        <h2 class="card-title">Creativity</h2>
+        <p class="card-text">We strive to create the most beautiful websites for all your needs. Working closely with you
+          to
+          design and
+          develop an amazing website for your business.</p>
+      </div>
+  
+      <div class="right card"><img class="tile-image" src="./Assets/construction.jpg" alt="metal structure">
+        <h2 class="card-title">Construction</h2>
+        <p>Built by our team of professional developers, we ensure the most rigourous and modern websites. Built from
+          scratch using HTML, CSS j.script, React and more. Only the best for you.</p>
+        </div>
         
-            <div class="right card">
-                <img class="tile-image" src="./Assets/construction.jpg" alt="metal structure">
-              <h2 class="card-title">Construction</h2>
-              <p>Built by our team of professional developers, we ensure the most rigourous and modern websites. Built from
-                scratch using HTML, CSS j.script, React and more. Only the best for you.</p>
-            </div>
-            <div class="right card">
-                <img class="title-image" src="./Assets/graphics.png" alt="paint designs">
-              <h2 class="card-title">Designing</h2>
-              <p>We expertice in giving you the best designs of art and practice of planning and projecting ideas of experiences with visual and textual content of the best creativity ever.</p>
-            </div>
-    </main>
-      
-    <section id="work">
-        <h2>Work</h2>
-        <ol>
-            <li>Web Developer</li>
-            <li>graphics designer</li>
-        </ol>
-        <video width="640" height="360" controls><source src="./Assets/video.mp4"></video>
-        <h5><a href="#Top">Back to Top</a></h5>
-    </section>
-
-    <section>
-        <form action="/text box">
-            <label for="text">Comment</label>
-            <input type="text" name="Comment">
-        </form>
-    <section id="submit">
-        <form action="/submit-form" method="post">
-            <input type="submit" value="submit">
-        </form>
+        <div class="leftdown card"><img class="title-image" src="./Assets/graphics.png" alt="paint designs">
+          <h2 class="card-title">Designing</h2>
+          <p>We expertice in giving you the best designs of art and practice of planning and projecting ideas of experiences with visual and textual content of the best creativity ever.</p>
+        </div>
+    
+      <div class="rightdown card"><video width="300" height="200" class="title-image" controls><source src="./Assets/video.mp4" type="video/mp4"></video>
+        <h2 class="card-title">Sample</h2>
+        <p>This is a video of me developing my portfolio website</p>
+      </div>
+    </div>
+    <footer>
+      <p class="footer">Copyright ©Wisdom. Alright Reserve</p></div>
+ </footer>
 </body>
 </html>

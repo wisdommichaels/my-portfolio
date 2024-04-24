@@ -5,21 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-     body{
-            
-        background-color:  rgb(18, 23, 47);
-            padding: 0;
-            margin: 0;
-            color: white;
-        }
+    *{
+      margin: 0;
+      padding: 0;
+    }
+       body {
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    flex-direction: column;
+    background-color:  rgb(18, 23, 47);
+    color: white;
+  }
+
         header{
+    display: flex;
+    justify-content: space-between;
     background-color: #547dc4;
-    color: #000000;
-    padding: 10px 0;
-    text-align: center;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding:20px 20vh;
+    align-items: center;
+}
+header img{
+    height: 30px;
 }
 
+nav{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+header nav div{
+    width: 2px;
+    height: 35px;
+    background-color: rgb(11, 3, 123);
+}
+  
 .nav{
     align-content: flex-end;
 }
@@ -29,6 +48,12 @@ nav ul {
     margin: 0;
     padding: 0;
 }
+#log{
+    border-radius: 5px;
+    background-color: rgb(45, 45, 194);
+    padding: 10px;
+}
+ 
 
 nav ul li {
     display: inline;
@@ -36,27 +61,38 @@ nav ul li {
 }
 
 nav ul li a {
-    color: rgb(105, 238, 238);
+    color: white;
     text-decoration: none;
 }
-#top :hover {
-  color: rgb(230, 42, 9);
+ul :hover {
+  color:  rgb(105, 238, 238);
 }
-
-nav ul li a:hover {
-    text-decoration: none;
+footer {
+    background-color: #547dc4;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 25px;
 }
+.footer{
+    margin: 0;
+}
+ 
     </style>
 </head>
 <body>
-    <header id="top"><a href="#Top"></a>
+    <header>
+        <img src="./Assets/MY LOG.png" alt="">
         <nav>
             <ul>
                 <li><a href="./home.html">Home</a></li>
-                <li><a href="./about.html">About</a></li>
+                <li><a href="./about.html">About Me</a></li>
                 <li><a href="./resume.html">Resume</a></li>
                 <li><a href="./work.html">Work</a></li>
-                <li><a href="./contact.html">Contact</a></li>
+                <li id="log"><a href="./contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -66,5 +102,9 @@ nav ul li a:hover {
         <P>Tell: +2349030995027</P>
         <p>Email: iamrex83@gmail.com</p>
     </section>
+    <footer>
+        <p class="footer">Copyright ©Wisdom. Alright Reserve</p></div>
+   </footer>
+   
 </body>
 </html>
