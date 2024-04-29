@@ -96,12 +96,23 @@ footer {
             </ul>
         </nav>
     </header>
-    
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <P>Tell: +2349030995027</P>
-        <p>Email: iamrex83@gmail.com</p>
-    </section>
+    <h2>Contact Us</h2>
+    <form action="/submit" method="post">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="contact">Contact Number:</label><br>
+        <input type="tel" id="contact" name="contact" required><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="comment">Comment:</label><br>
+        <textarea id="comment" name="comment" rows="4" cols="50" required></textarea><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
     <footer>
         <p class="footer">Copyright ©Wisdom. Alright Reserve</p></div>
    </footer>
