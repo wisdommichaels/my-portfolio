@@ -89,6 +89,7 @@ span{
 
 
   footer {
+    display: flex;
     background-color: #547dc4;
     color: #fff;
     text-align: center;
